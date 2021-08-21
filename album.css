@@ -1,0 +1,165 @@
+/*文字コードの設定*/
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css');
+
+
+/* .story {
+  content-visibility: auto;
+  contain-intrinsic-size: 100px 1000px;
+} */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 背景を設定する シームレス画像を使ってきれいに背景を表示する */
+body {
+  animation: fadein 3s forwards;
+  background: url("images/album/free-seamless-wood-texture2.jpg") center;
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  /* background-repeat: repeat-x; */
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+}
+ 
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 背景の範囲を設定する */
+.background {
+  height: 600vh;
+}
+
+.title {
+  position: absolute;
+  font-size: 40em;
+  margin-top: 30vh;
+  /* box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .8); */
+}
+ 
+/* Grid styles -------------------------------------------------*/
+
+/* 画像間の隙間の大きさを定義する */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 80px;
+}
+ 
+ 
+/* ナビゲーションのポジションを絶対にして重ねる */
+nav {
+  position: absolute;
+  z-index: 3;
+}
+
+/* ナビゲーションの詳細を設定する */
+header nav .nav_menue {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;          
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 25px;
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+header nav .active {
+  opacity: .6;
+  visibility: visible;
+  transform: none;
+  box-shadow: 0 2px 2px #ccc;
+  background-color: #fff;
+}
+
+header nav a {
+  color: #333;
+}
+
+li {
+  margin-right: 25px;
+}
+/* aタグで色を設定するとリンクによる強制デコレーションでのカラー変更を無視することができる */
+/* text-decorationで下線部を消す */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* 桜の花びら */
+.sakura {
+  position: absolute;
+}
+ 
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+ 
+.cards {
+  max-width: 90vw;
+  margin: 0 auto 50px;
+}
+ 
+article {
+  position: relative;
+}
+
+/* チェキの枠を表現する */
+.imageframe {
+  width: 120%;
+  height: 220px;
+  background-color: #fff;
+  margin-top: 5vh;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .8);
+}
+
+.article-img {
+  height: 200px;
+  width: 80%;
+  object-fit: cover;
+  margin-top: 3%;
+  margin-left: 5%;
+  border: solid;
+  border-color: rgb(238, 238, 238);
+  border-radius: 1px;
+}
+ 
+.article-title {
+  position: absolute;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  vertical-align: middle;
+  /* bottom: 0; */
+  margin-top: 8vh;
+  top: 25%;
+  left: 96%;
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  transform: translateY(-20%);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+@keyframes fadein {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}

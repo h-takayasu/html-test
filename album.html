@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM | Name of new salad</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="album.css">
+    <script src="album.js" defer></script>
+    <!-- ここでJavaScriptを実行しないと、読み込み時にtransitionが動いてしまった -->
+    <script>console.log("");</script>
+    <!-- 画像の拡大縮小の借用 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav_test">
+            <ul id="navs" class="nav_menue">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="member.html">MEMBER</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="column.html">COLUMN</a></li>
+                <li><a href="works.html">WORKS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <section class="leading">
+            <p class="leading-bigtext">Hello</p>
+            <p class="leading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae semper quam. Praesent lobortis tellus quis erat condimentum, a bibendum tortor volutpat.</p>
+        </section> -->
+        <div class="background">
+            <div class="title">
+                <h1>Album</h1>
+            </div>
+            <div class="sakura" style="margin-top: 30%; margin-left: 50%;">
+                <img src="images/sakura.png" alt="桜の花びら">
+            </div>
+            <div class="sakura" style="margin-top: 10%; margin-left: 20%; transform:rotate(120deg);">
+                <img src="images/sakura.png" alt="桜の花びら">
+            </div>
+            <section class="cards">
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image001.jpg" data-lightbox="group">
+                            <img class="article-img" src="images/album/album_image001.jpg" alt="マーブルビーチ">
+                        </a>
+                    </div>
+                    <h1 class="article-title">
+                    マーブルビーチ
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image002.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image002.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    マーブルビーチ②
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image003.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image003.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    嘘つけ
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image004.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image004.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    石拾いのバイト
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image005.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image005.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    四つ木のマドンナ
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image006.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image006.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    柔軟性
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image007.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image007.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    太陽の下
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image008.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image008.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    たのパーカー
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image009.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image009.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    太陽の塔
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image010.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image010.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    おしゃれ小町
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image011.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image011.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    青年の公園
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image012.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image012.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    髪を染めた
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image013.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image013.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    幸せですか
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image014.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image014.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    山月記
+                    </h1>
+                </article>
+                <article>
+                    <div class="imageframe">
+                        <a href="images/album/album_image015.jpg" data-lightbox="group"><img class="article-img" src="images/album/album_image015.jpg" alt=" "></a>
+                    </div>
+                    <h1 class="article-title">
+                    宝物なんですよ
+                    </h1>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
