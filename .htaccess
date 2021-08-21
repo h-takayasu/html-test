@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     "TA NO KAI"
+AuthUserFile /.htpasswd
+require valid-user
